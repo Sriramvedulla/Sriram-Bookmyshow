@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222539;
+  height: 3vw;
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+  gap: 25px;
+}
+.navlist li {
+  list-style-type: none;
+  font-size: 14px;
+}
+.navlist a {
+  text-decoration: none;
+  color: #cdcdd1;
+}
+.navlist a:hover {
+  color: #fff;
+}
+.navlist1 {
+  display: flex;
+  align-items: center;
+  margin-right: 4vw;
+  gap: 25px;
+}
+.navlist1 li {
+  list-style-type: none;
+  font-size: 13px;
+}
+.navlist1 a {
+  text-decoration: none;
+  color: #fff;
+}

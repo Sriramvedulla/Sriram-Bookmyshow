@@ -1,0 +1,60 @@
+header {
+  background-color: #333545;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+.logoimg {
+  display: flex;
+  align-items: center;
+}
+.logoimg img {
+  width: 13vw;
+  margin-left: 2vw;
+}
+#searchbar {
+  height: 6vh;
+  width: 40vw;
+  border-radius: 5px;
+  border: none;
+}
+::placeholder {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.logging {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.hyd {
+  color: #cdcdd1;
+  text-decoration: none;
+  font-size: 14px;
+}
+.hyd:hover {
+  color: #fff;
+}
+.fa-caret-down {
+  color: #fff;
+}
+.signin {
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #f84464;
+  cursor: pointer;
+}
+.menudash {
+  cursor: pointer;
+}
+.dash {
+  width: 25px;
+  height: 2px;
+  background-color: #cdcdd1;
+  margin: 4px 0;
+  margin-right: 4vw;
+}
