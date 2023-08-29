@@ -7,7 +7,7 @@
 .navlist {
   display: flex;
   align-items: center;
-  margin-left: 1vw;
+  margin-left: 4vw;
   gap: 25px;
 }
 .navlist li {
@@ -34,4 +34,16 @@
 .navlist1 a {
   text-decoration: none;
   color: #fff;
+}
+#worldcup {
+  width: 80%;
+  height: 20px;
+}
+.new {
+  font-size: 8px;
+  color: rgb(231, 54, 77);
+  font-weight: 500;
+  position: absolute;
+  left: 742px;
+  bottom: 88%;
 }

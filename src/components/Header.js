@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import Navbar from "./navbar";
 function Header() {
@@ -6,9 +7,9 @@ function Header() {
     <div>
       <header>
         <div className="logoimg">
-          <a href="">
+          <Link to="/">
             <img src="./images/book.png" alt="" />
-          </a>
+          </Link>
           <input
             type="search"
             id="searchbar"

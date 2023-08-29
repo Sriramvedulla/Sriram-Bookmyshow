@@ -1,43 +1,54 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./nav.css";
 function Navbar() {
   return (
     <div className="navbar">
       <ul className="navlist">
         <li>
-          <a href="">Movies</a>
+          <Link to="/movies">Movies</Link>
         </li>
         <li>
-          <a href="">Stream</a>
+          <Link to="/stream"> Stream</Link>
         </li>
         <li>
-          <a href="">Events</a>
+          <Link to="/events">Events</Link>
         </li>
         <li>
-          <a href="">Plays</a>
+          <Link to="/plays">Plays</Link>
         </li>
         <li>
-          <a href="">Sports</a>
+          <Link to="/sports">Sports</Link>
         </li>
         <li>
-          <a href="">Activities</a>
+          <Link to="/activities">Activities</Link>
         </li>
         <li>
-          <a href="">Buzz</a>
+          <Link to="/buzz">Buzz</Link>
+        </li>
+        <li>
+          <Link to="/worldcup">
+            <img
+              id="worldcup"
+              src="https://assets-in.bmscdn.com/static/2023/08/cwc23.png"
+              alt=""
+            />
+            <div className="new">NEW</div>
+          </Link>
         </li>
       </ul>
       <ul className="navlist1">
         <li>
-          <a href="">ListYourshow</a>
+          <Link to="/listyourshow">ListYourshow</Link>
         </li>
         <li>
-          <a href="">Corporates</a>
+          <Link to="/corporates">Corporates</Link>
         </li>
         <li>
-          <a href="">Offers</a>
+          <Link to="/offers">Offers</Link>
         </li>
         <li>
-          <a href="">Gift Cards</a>
+          <Link to="/offers">Gift Cards</Link>
         </li>
       </ul>
     </div>

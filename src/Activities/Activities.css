@@ -1,0 +1,18 @@
+.maindivs {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.Activitiesimages {
+  width: 280px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.ActivitesPara {
+  width: 260px;
+  cursor: pointer;
+  margin-left: 10px;
+}
