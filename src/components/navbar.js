@@ -48,7 +48,7 @@ function Navbar() {
           <Link to="/offers">Offers</Link>
         </li>
         <li>
-          <Link to="/offers">Gift Cards</Link>
+          <Link to="/gifts">Gift Cards</Link>
         </li>
       </ul>
     </div>

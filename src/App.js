@@ -10,6 +10,9 @@ import ListYourShow from "./ListYourShow/ListYourShow";
 import Home from "./Home/Home";
 import Sports from "./Sports/Sports";
 import Events from "./Events/Events";
+import Giftcards from "./Giftcards/Giftcards";
+import Corporatesbody from "./Corporates/Corporates";
+import Offers from "./Offers/Offers";
 
 // import Slider from "./Slider/Slider";
 
@@ -26,9 +29,15 @@ function App() {
           <Route path="/activities" element={<Activities></Activities>}></Route>
           <Route path="/buzz" element={<Buzz></Buzz>}></Route>
           <Route path="/worldcup" element={<Worldcup></Worldcup>}></Route>
+          <Route path="/offers" element={<Offers></Offers>}></Route>
           <Route
             path="/listyourshow"
             element={<ListYourShow></ListYourShow>}
+          ></Route>
+          <Route path="/gifts" element={<Giftcards></Giftcards>}></Route>
+          <Route
+            path="corporates"
+            element={<Corporatesbody></Corporatesbody>}
           ></Route>
         </Routes>
       </BrowserRouter>

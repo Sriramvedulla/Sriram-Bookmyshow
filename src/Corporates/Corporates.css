@@ -1,0 +1,9 @@
+.crimg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.crimg {
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
