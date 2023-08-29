@@ -1,0 +1,25 @@
+.Movies {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5% 0 5%;
+}
+.Rmovies {
+  display: flex;
+  gap: 30px;
+}
+.Rmovies h3 {
+  text-align: end;
+}
+.movies {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5%;
+}
+.Movies-in {
+  background-color: #2b3149;
+  color: aliceblue;
+}
+.divs {
+  width: "11%";
+  height: "400px";
+}
