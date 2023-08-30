@@ -1,0 +1,15 @@
+.movieslist {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.movies {
+  width: 20%;
+}
+.movies img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 5px;
+}

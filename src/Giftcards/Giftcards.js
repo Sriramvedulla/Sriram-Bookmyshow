@@ -155,6 +155,22 @@ function Giftcards() {
           alt=""
         />
       </div>
+      <div className="spanbtn">
+        <span>
+          <button id="giftbtn">E-Gift cards</button>
+          <button id="giftbtn">physical gift cards</button>
+        </span>
+      </div>
+      <h2 className="pickhead">Pick a card from one of our themes</h2>
+      <div className="giftbtns">
+        <div className="allbtns">
+          <button className="btns btn1">All</button>
+          <button className="btns btn2">Generic</button>
+          <button className="btns btn3">Occasion</button>
+          <button className="btns btn4">Festival</button>
+          <button className="btns btn5">Combos</button>
+        </div>
+      </div>
       <div className="giftcards">
         {giftCards.gifts.map((item) => {
           return (
