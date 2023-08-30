@@ -13,6 +13,8 @@ import Events from "./Events/Events";
 import Giftcards from "./Giftcards/Giftcards";
 import Corporatesbody from "./Corporates/Corporates";
 import Offers from "./Offers/Offers";
+import Plays from "./Plays/Plays";
+import Movies from "./Movies/Movies";
 
 // import Slider from "./Slider/Slider";
 
@@ -24,10 +26,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/stream" element={<Stream></Stream>}></Route>
+          <Route path="/movies" element={<Movies></Movies>}></Route>
           <Route path="/events" element={<Events></Events>}></Route>
           <Route path="/sports" element={<Sports></Sports>}></Route>
           <Route path="/activities" element={<Activities></Activities>}></Route>
           <Route path="/buzz" element={<Buzz></Buzz>}></Route>
+          <Route path="/plays" element={<Plays></Plays>}></Route>
           <Route path="/worldcup" element={<Worldcup></Worldcup>}></Route>
           <Route path="/offers" element={<Offers></Offers>}></Route>
           <Route

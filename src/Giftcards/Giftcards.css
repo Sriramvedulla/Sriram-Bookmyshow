@@ -1,0 +1,23 @@
+.giftcards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.itemcard {
+  width: 22%;
+  margin: auto;
+}
+.itemcard img {
+  width: 100%;
+}
+.giftbanner {
+  width: 90%;
+  margin: auto;
+}
+.giftbanner img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
