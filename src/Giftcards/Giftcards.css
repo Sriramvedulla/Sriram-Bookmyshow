@@ -55,13 +55,12 @@ span {
   margin-left: 10px;
   margin-right: 10px;
 }
-.btn1 {
+
+.btns:hover,
+.btnActive {
   background-color: #eb4e62;
   color: #fff;
-}
-.btns:hover {
-  background-color: #eb4e62;
-  color: #fff;
+  border: 1px transparent;
 }
 .pickhead {
   text-align: center;
