@@ -7,7 +7,7 @@
 .navlist {
   display: flex;
   align-items: center;
-  margin-left: 4vw;
+  margin-left: 2vw;
   gap: 25px;
 }
 .navlist li {
@@ -45,5 +45,5 @@
   font-weight: 500;
   position: absolute;
   left: 742px;
-  bottom: 88%;
+  bottom: 70%;
 }

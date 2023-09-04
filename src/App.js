@@ -15,6 +15,9 @@ import Corporatesbody from "./Corporates/Corporates";
 import Offers from "./Offers/Offers";
 import Plays from "./Plays/Plays";
 import Movies from "./Movies/Movies";
+import { movietheaters } from "./Utils/BuyTicketsData";
+import BuyTickets from "./components/BuyTickets";
+// import BuyTickets from "./Components/BuyTickets/BuyTickets";
 
 // import Slider from "./Slider/Slider";
 
@@ -42,6 +45,42 @@ function App() {
           <Route
             path="corporates"
             element={<Corporatesbody></Corporatesbody>}
+          ></Route>
+          <Route
+            path="/jailerTickets"
+            element={
+              <BuyTickets
+                movieName="Jailer"
+                movieTicketsArray={movietheaters.JailerTelugu_2D_Theaters}
+              ></BuyTickets>
+            }
+          ></Route>
+          <Route
+            path="/jawanTickets"
+            element={
+              <BuyTickets
+                movieName="Jawan"
+                movieTicketsArray={movietheaters.JawanHindi_2D_Theaters}
+              ></BuyTickets>
+            }
+          ></Route>
+          <Route
+            path="/jailerTickets"
+            element={
+              <BuyTickets
+                movieName="Jailer"
+                movieTicketsArray={movietheaters.JailerTelugu_2D_Theaters}
+              ></BuyTickets>
+            }
+          ></Route>
+          <Route
+            path="/jawanTickets"
+            element={
+              <BuyTickets
+                movieName="Jawan"
+                movieTicketsArray={movietheaters.JawanHindi_2D_Theaters}
+              ></BuyTickets>
+            }
           ></Route>
         </Routes>
       </BrowserRouter>

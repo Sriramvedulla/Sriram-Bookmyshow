@@ -208,12 +208,13 @@ const giftCards = {
 };
 function Giftcards() {
   const [btnActive, setbtnActive] = useState([
-    false,
+    true,
     false,
     false,
     false,
     false,
   ]);
+  const [newGiftscardArray, setNewGiftscardArray] = useState(giftCards.gifts);
 
   function multipleStates(index) {
     const newbtnActive = btnActive.map((ele, i) => {
@@ -224,6 +225,12 @@ function Giftcards() {
     });
     console.log(newbtnActive);
     setbtnActive(newbtnActive);
+  }
+
+  function filterfunction(x) {
+    const a = giftCards.gifts.filter((ele) => ele.category == x);
+
+    setNewGiftscardArray(a);
   }
   return (
     <div>
@@ -246,6 +253,7 @@ function Giftcards() {
             className={btnActive[0] ? "btns btnActive" : "btns"}
             onClick={() => {
               multipleStates(0);
+              setNewGiftscardArray(giftCards.gifts);
             }}
           >
             All
@@ -254,6 +262,7 @@ function Giftcards() {
             className={btnActive[1] ? "btns btnActive" : "btns"}
             onClick={() => {
               multipleStates(1);
+              filterfunction("Generic");
             }}
           >
             Generic
@@ -262,6 +271,7 @@ function Giftcards() {
             className={btnActive[2] ? "btns btnActive" : "btns"}
             onClick={() => {
               multipleStates(2);
+              filterfunction("Occasion");
             }}
           >
             Occasion
@@ -270,6 +280,7 @@ function Giftcards() {
             className={btnActive[3] ? "btns btnActive" : "btns"}
             onClick={() => {
               multipleStates(3);
+              filterfunction("Festival");
             }}
           >
             Festival
@@ -278,6 +289,7 @@ function Giftcards() {
             className={btnActive[4] ? "btns btnActive" : "btns"}
             onClick={() => {
               multipleStates(4);
+              filterfunction("combos");
             }}
           >
             Combos
@@ -285,7 +297,7 @@ function Giftcards() {
         </div>
       </div>
       <div className="giftcards">
-        {giftCards.gifts.map((item) => {
+        {newGiftscardArray.map((item) => {
           return (
             <div className="itemcard">
               <img src={item.gift} alt="" />
