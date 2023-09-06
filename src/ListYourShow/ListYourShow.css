@@ -23,6 +23,7 @@
 .showcards h3,
 .showcards2 h3 {
   text-align: center;
+  font-size: 20px;
   color: #333333;
 }
 #thumb {
@@ -62,7 +63,7 @@
   border: 1px solid rgb(224, 217, 217);
   border-radius: 5px;
   padding: 5px;
-  height: 200px;
+  height: 220px;
   text-decoration: none;
   background-color: #fcf1f1;
   color: #333333;

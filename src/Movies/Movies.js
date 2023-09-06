@@ -1,5 +1,10 @@
 import React from "react";
-
+import {
+  UncontrolledAccordion,
+  AccordionHeader,
+  AccordionItem,
+  AccordionBody,
+} from "reactstrap";
 import "./Movies.css";
 import { Link } from "react-router-dom";
 
@@ -63,10 +68,10 @@ const MoviesData = [
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC8xMCAgMTI4LjJLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312549-trnjveudsm-portrait.jpg",
-    title: "Rocky Aur Rani Kii Prem Kahaani",
-    certificate: "UA",
-    languages: "Hindi",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4xLzEwICAxLjdLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00367624-xehmldscrk-portrait.jpg",
+    title: "Karumegangal Kalaigindrana",
+    certificate: "U",
+    languages: "Tamil",
   },
   {
     imageLink:
@@ -99,10 +104,10 @@ const MoviesData = [
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICAxMTkuNUsgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329481-gdlsqkwwld-portrait.jpg",
-    title: "Mission Impossible: Dead Reckoning - Part One",
-    certificate: "UA",
-    languages: "English , Hindi , Telugu , Tamil",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-NC43LzEwICAxLjJLIFZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00367748-eejgvttnbx-portrait.jpg",
+    title: "Rangoli",
+    certificate: "U",
+    languages: "Tamil",
   },
   {
     imageLink:
@@ -122,19 +127,154 @@ const MoviesData = [
 
 function Movies() {
   return (
-    <div className="bookmyshow">
-      {MoviesData.map((x) => {
-        return (
-          <Link to={x.route}>
-            <div>
-              <img src={x.imageLink} alt="" />
-              <h2>{x.title}</h2>
-              <p>{x.certificate}</p>
-              <p>{x.languages}</p>
-            </div>
-          </Link>
-        );
-      })}
+    <div className="moviesbody">
+      <div className="bookmyshow">
+        <div className="bmyleft">
+          <UncontrolledAccordion defaultOpen={["1"]} stayOpen>
+            <AccordionItem className="border border-light accord">
+              <AccordionHeader targetId="1">Languages</AccordionHeader>
+              <AccordionBody accordionId="1">
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  English
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Hindi
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Tamil
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Telugu
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Malayalam
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Kannada
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Bengali
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Gujarati
+                </button>
+                <button
+                  className="p-2 ms-3 mb-3 border border-light-subtle evebtns"
+                  onClick={() => {}}
+                >
+                  Multi Language
+                </button>
+              </AccordionBody>
+            </AccordionItem>
+            <AccordionItem className="border border-light accord">
+              <AccordionHeader targetId="2">Categories</AccordionHeader>
+              <AccordionBody accordionId="2">
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Online Streaming Events
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Workshops
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Comedy Shows
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Music Shows
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Kids
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Meetups
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Spirituality
+                </button>
+                <button className="p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Exhibitions
+                </button>
+              </AccordionBody>
+            </AccordionItem>
+            <AccordionItem className="border border-light accord">
+              <AccordionHeader targetId="3">More Filters</AccordionHeader>
+              <AccordionBody accordionId="3">
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Online Streaming
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Outdoor Events
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Fast Filling
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Kids Allowed
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Must Attend
+                </button>
+              </AccordionBody>
+            </AccordionItem>
+            <AccordionItem className="border border-light accord">
+              <AccordionHeader targetId="4">Price</AccordionHeader>
+              <AccordionBody accordionId="4">
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Free
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  0-500
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  501-2000
+                </button>
+                <button className="bg-white p-2 ms-3 mb-3 border border-light-subtle evebtns">
+                  Above 2000
+                </button>
+              </AccordionBody>
+            </AccordionItem>
+          </UncontrolledAccordion>
+        </div>
+        <div className="bmyright">
+          {MoviesData.map((x) => {
+            return (
+              <div className="bmymovies">
+                <Link className="linked" to={x.route}>
+                  <div className="bmovies">
+                    <img src={x.imageLink} alt="" />
+                    <h4>{x.title}</h4>
+                    <p>{x.certificate}</p>
+                    <p>{x.languages}</p>
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }

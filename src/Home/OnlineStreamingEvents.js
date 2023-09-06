@@ -42,15 +42,15 @@ function OnlineStreamingEvents() {
       <div className="movies">
         <div className="Movies">
           <h2>Online Streeming Events</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
-        <div className="Movies">
+        <div className="Rmovies">
           {OnlineStreemingevents.map((item) => {
             return (
-              <div>
-                <img src={item.imgLink} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.imgLink} alt="rmovies" />
                 <h3>{item.h3}</h3>
-                <h4>{item.h4}</h4>
+                <p>{item.h4}</p>
               </div>
             );
           })}

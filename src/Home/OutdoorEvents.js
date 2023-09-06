@@ -42,13 +42,13 @@ function OutdoorEvents({ imgLink, h3, p }) {
       <div className="movies">
         <div className="Movies">
           <h2>Outdoor Events</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
-        <div className="Movies">
+        <div className="Rmovies">
           {Outdoorevents.map((item) => {
             return (
-              <div>
-                <img src={item.imgLink} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.imgLink} alt="rmovies" />
                 <h3>{item.h3}</h3>
                 <p>{item.p}</p>
               </div>

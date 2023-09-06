@@ -38,13 +38,13 @@ function RecomendedMovies() {
       <div className="movies">
         <div className="Movies">
           <h2>Recomended Movies</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
         <div className="Rmovies">
           {Recomendedmovies.map((item) => {
             return (
-              <div>
-                <img src={item.RmImgLink} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.RmImgLink} alt="rmovies" />
                 <h3>{item.RmName}</h3>
                 <p>{item.RmType}</p>
               </div>

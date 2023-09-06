@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css";
 // Premiers========================================================
 const Premier = [
   {
@@ -40,24 +41,24 @@ function Premiers() {
   return (
     <div>
       <div className="Movies-in" style={{ marginBottom: "5%" }}>
-        <img
-          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
-          style={{ width: "90%", margin: " 0 5% 0 5%" }}
-        ></img>
-        <div className="Movies">
-          <h2>Premieres</h2>
-          <p>See All</p>
+        <div className="premiermovies">
+          <img
+            src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
+            alt="rmovies"
+          />
+          <div className="premierflex">
+            <h2>Premieres</h2>
+            <p className="see">See All</p>
+          </div>
+          <p>Brand new releases every Friday</p>
         </div>
-        <p style={{ marginBottom: "20px", marginLeft: "5%" }}>
-          Brand new releases every Friday
-        </p>
-        <div className="Movies">
+        <div className="Rmovies">
           {Premier.map((item) => {
             return (
-              <div>
-                <img src={item.PremiersImg} alt="" />
+              <div className="rmoviesimg1">
+                <img src={item.PremiersImg} alt="rmovies" />
                 <h3>{item.PremierH3}</h3>
-                <h4>{item.PremierH4}</h4>
+                <p>{item.PremierH4}</p>
               </div>
             );
           })}

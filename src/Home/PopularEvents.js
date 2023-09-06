@@ -38,13 +38,13 @@ function PopularEvents({ imgLink, h3, p }) {
       <div className="movies">
         <div className="Movies">
           <h2>Popular Events</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
-        <div className="Movies">
+        <div className="Rmovies">
           {Popularevents.map((item) => {
             return (
-              <div>
-                <img src={item.imgLink} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.imgLink} alt="rmovies" />
                 <h3>{item.h3}</h3>
                 <p>{item.p}</p>
               </div>

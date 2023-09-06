@@ -23,19 +23,19 @@ const TheBestOfLiveEvents = [
       "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/esports-collection-202211140440.png",
   },
 ];
-function LiveEvents({ TheBestOfLiveevEventsimg }) {
+function LiveEvents() {
   return (
     <div>
       <div className="movies">
         <div className="Movies">
           <h2>The Best Of Live Events</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
-        <div className="Movies">
+        <div className="Rmovies">
           {TheBestOfLiveEvents.map((item) => {
             return (
-              <div>
-                <img src={item.TheBestOfLiveevEventsImg} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.TheBestOfLiveevEventsImg} alt="rmovies" />
               </div>
             );
           })}

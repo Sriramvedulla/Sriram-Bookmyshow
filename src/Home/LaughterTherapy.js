@@ -42,13 +42,13 @@ function LaughterTherapy() {
       <div className="movies">
         <div className="Movies">
           <h2>Laughter Therapy</h2>
-          <p>See All</p>
+          <p className="see">See All</p>
         </div>
-        <div className="Movies">
+        <div className="Rmovies">
           {Laughtertherapy.map((item) => {
             return (
-              <div>
-                <img src={item.imgLink} alt="" />
+              <div className="rmoviesimg">
+                <img src={item.imgLink} alt="rmovies" />
                 <h3>{item.h3}</h3>
                 <p>{item.p}</p>
               </div>
