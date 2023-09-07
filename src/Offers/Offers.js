@@ -1,7 +1,7 @@
 import React from "react";
 import "./Offer.css";
 import Offers1 from "./Offers1.js";
-//import Offers2 from "./Offers2.js";
+import Offers2 from "./Offers2.js";
 import Offers3 from "./Offers3.js";
 import Offers4 from "./Offers4.js";
 import Offers5 from "./Offers5.js";
@@ -179,63 +179,73 @@ function Offers() {
     <div>
       {/*-------------------- Offers1---------- */}
       <div className="offers">
-        {OffersList1.map((item) => {
-          return (
-            <Offers1
-              imgLink={item.imgLink}
-              para1={item.para1}
-              para2={item.para2}
-            ></Offers1>
-          );
-        })}
+        <div className="offerlink">
+          {OffersList1.map((item) => {
+            return (
+              <Offers1
+                imgLink={item.imgLink}
+                para1={item.para1}
+                para2={item.para2}
+              ></Offers1>
+            );
+          })}
+        </div>
       </div>
       {/*-------------------Offers2--------*/}
-      {/* <div className="offers">
-        {OffersList2.map((item) => {
-          return (
-            <Offers2
-              imgLink={item.imgLink}
-              para1={item.para1}
-              para2={item.para2}
-            ></Offers2>
-          );
-        })}
-      </div> */}
+      <div className="offers">
+        <div className="offerlink">
+          {OffersList2.map((item) => {
+            return (
+              <Offers2
+                imgLink={item.imgLink}
+                para1={item.para1}
+                para2={item.para2}
+              ></Offers2>
+            );
+          })}
+        </div>
+      </div>
       {/*-------------------Offers3--------*/}
       <div className="offers">
-        {OffersList3.map((item) => {
-          return (
-            <Offers3
-              imgLink={item.imgLink}
-              para1={item.para1}
-              para2={item.para2}
-            ></Offers3>
-          );
-        })}
+        <div className="offerlink">
+          {OffersList3.map((item) => {
+            return (
+              <Offers3
+                imgLink={item.imgLink}
+                para1={item.para1}
+                para2={item.para2}
+              ></Offers3>
+            );
+          })}
+        </div>
       </div>
       {/*-------------------Offers4--------*/}
       <div className="offers">
-        {OffersList4.map((item) => {
-          return (
-            <Offers4
-              imgLink={item.imgLink}
-              para1={item.para1}
-              para2={item.para2}
-            ></Offers4>
-          );
-        })}
+        <div className="offerlink">
+          {OffersList4.map((item) => {
+            return (
+              <Offers4
+                imgLink={item.imgLink}
+                para1={item.para1}
+                para2={item.para2}
+              ></Offers4>
+            );
+          })}
+        </div>
       </div>
       {/*-------------------Offers5--------*/}
       <div className="offers">
-        {OffersList5.map((item) => {
-          return (
-            <Offers5
-              imgLink={item.imgLink}
-              para1={item.para1}
-              para2={item.para2}
-            ></Offers5>
-          );
-        })}
+        <div className="offerlink">
+          {OffersList5.map((item) => {
+            return (
+              <Offers5
+                imgLink={item.imgLink}
+                para1={item.para1}
+                para2={item.para2}
+              ></Offers5>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

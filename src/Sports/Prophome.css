@@ -1,13 +1,22 @@
-img {
-  width: 200px;
+.sportsprop {
+  display: flex;
+  flex-wrap: wrap;
+}
+.parent {
+  width: 80%;
+  margin: auto;
+}
+.cards {
+  width: 60%;
 }
 
-h4 {
-  width: 250px;
+.cards img {
+  width: 100%;
+}
+
+.cards h4 {
+  font-size: 20px;
 }
 .firstp {
   font-weight: 500;
-}
-p {
-  margin: 20px 0px;
 }
