@@ -10,6 +10,7 @@
 .Movies h2 {
   text-align: left;
 }
+/* recommend movies,online streaming,outdoor, laughter,popular */
 .Rmovies {
   display: flex;
   width: 90%;
@@ -19,13 +20,27 @@
 .rmoviesimg {
   width: 30%;
 }
+.rmoviesimg2 {
+  width: 18%;
+}
+.rmoviesimg2 img {
+  border-radius: 10px;
+  height: 220px;
+}
 .rmoviesimg h3 {
-  text-align: start;
+  padding: 0px 5px;
+  justify-content: flex-start;
   font-size: 18px;
+}
+.rmoviesimg p {
+  padding: 0px 5px;
+  margin-top: -5px;
 }
 .rmoviesimg img {
   border-radius: 10px;
+  height: 360px;
 }
+/* premier */
 .Movies-in {
   background-color: #2b3149;
   color: aliceblue;
@@ -35,11 +50,17 @@
   width: 18%;
 }
 .rmoviesimg1 > h3 {
-  text-align: center;
+  justify-content: flex-start;
+  padding: 5px 5px;
   font-size: 18px;
+}
+.rmoviesimg1 > p {
+  padding: 0px 5px;
+  margin-top: -8px;
 }
 .rmoviesimg1 img {
   border-radius: 10px;
+  height: 330px;
 }
 .premiermovies {
   width: 90%;

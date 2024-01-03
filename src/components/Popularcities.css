@@ -1,0 +1,48 @@
+.popular {
+  background-color: #fff;
+  color: #000;
+}
+.popularcities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.pop {
+  text-align: center;
+}
+.cities img {
+  width: 90%;
+}
+.cities p {
+  font-size: 14px;
+  text-align: center;
+}
+li {
+  color: #000;
+}
+/* collapse section */
+.viewcities {
+  color: #dc375a;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+}
+.cardbody {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.cardbody ul {
+  margin-left: -40px;
+}
+.cardbody li {
+  list-style-type: none;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #888585;
+  cursor: pointer;
+}
+.cardbody li:hover {
+  color: #000;
+}

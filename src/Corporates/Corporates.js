@@ -1,5 +1,6 @@
 import React from "react";
 import "./Corporates.css";
+
 function Corporatesbody() {
   let images = [
     "https://in.bmscdn.com/webin/corporate/hp-logo.png",
@@ -28,19 +29,19 @@ function Corporatesbody() {
           OUR PARTNERS
         </h4>
         <ul style={{ listStyleType: "none" }}>
-          {images.map((item) => {
+          {images.map((item, c) => {
             return (
-              <li>
-                <img src={item} alt="" />
+              <li key={c}>
+                <img src={item} alt="corpimages" />
               </li>
             );
           })}
         </ul>
       </div>
       <div className="crp">
-        {text.name.map((x) => {
+        {text.name.map((x, c) => {
           return (
-            <div>
+            <div key={c}>
               <h4>{x.item}</h4>
               <p>{x.item2}</p>
             </div>

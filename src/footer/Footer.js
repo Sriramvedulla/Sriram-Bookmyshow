@@ -1,5 +1,4 @@
 import React from "react";
-import FooterMovies from "../FooterMovies";
 import "./Footer.css";
 import Footerimg from "./Footerimg";
 
@@ -20,7 +19,6 @@ export default function Footer() {
         </div>
       </div>
       <Footerimg></Footerimg>
-      <FooterMovies></FooterMovies>
     </div>
   );
 }

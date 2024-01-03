@@ -179,11 +179,11 @@ const BuzzData = [
 const BuzzItem = () => {
   return (
     <div className="BuzzItem">
-      {BuzzData.map((x) => {
+      {BuzzData.map((x, b) => {
         return (
-          <div className="BuzzItem_box">
+          <div className="BuzzItem_box" key={b}>
             <div className="image-bx">
-              <img src={x.image} alt="" />
+              <img src={x.image} alt="buzzimages" />
             </div>
             <div className="review_box">
               <h1>{x.heading}</h1>

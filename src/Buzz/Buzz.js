@@ -29,21 +29,11 @@ const Buzz = () => {
             <div className="poplist_box">
               <p className="poplist_hd">Popular categories</p>
               <ul className="pop_list">
-                <li>
-                  <a href="">Movies</a>
-                </li>
-                <li>
-                  <a>Events</a>
-                </li>
-                <li>
-                  <a>Sports</a>
-                </li>
-                <li>
-                  <a>Musics</a>
-                </li>
-                <li>
-                  <a>Streaming</a>
-                </li>
+                <li>Movies</li>
+                <li>Events</li>
+                <li>Sports</li>
+                <li>Musics</li>
+                <li>Streaming</li>
               </ul>
             </div>
           </div>

@@ -1,0 +1,25 @@
+.play-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.plays {
+  width: 23%;
+  height: 500px;
+  margin-top: 40px;
+}
+.plays img {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+.play-title {
+  font-size: 20px;
+  text-align: inherit;
+}
+.plays p,
+.plays b {
+  margin-top: -10px;
+}

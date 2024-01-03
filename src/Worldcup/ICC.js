@@ -66,15 +66,17 @@ function ICC() {
   return (
     <div>
       <div>
-        <h3 className="heading2">Find Matches By Venue</h3>
+        <h3 className="heading2" id="venue">
+          Find Matches By Venue
+        </h3>
       </div>
 
       <div className="mainimg-card">
-        {matches.map((x) => {
+        {matches.map((x, j) => {
           return (
-            <div>
+            <div key={j}>
               <div className="imageCard">
-                <img src={x.imageLink} />
+                <img src={x.imageLink} alt="worldcupimg" />
               </div>
               <div></div>
             </div>
@@ -83,7 +85,10 @@ function ICC() {
       </div>
 
       <div className="ott-logo">
-        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-240:q-80/cwc-partners-web-collection-202308240228.png" />
+        <img
+          src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-240:q-80/cwc-partners-web-collection-202308240228.png"
+          alt="bannerimg"
+        />
       </div>
     </div>
   );

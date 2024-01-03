@@ -24,6 +24,10 @@
 .bmovies h4 {
   font-size: 20px;
   text-align: left;
+  margin-bottom: -5px;
+}
+.bmovies p {
+  margin-bottom: -5px;
 }
 .bmyleft {
   width: 35%;

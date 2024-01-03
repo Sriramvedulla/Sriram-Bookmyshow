@@ -11,15 +11,14 @@ import Home from "./Home/Home";
 import Sports from "./Sports/Sports";
 import Events from "./Events/Events";
 import Giftcards from "./Giftcards/Giftcards";
+import Allgifts from "./Giftcards/Allgifts";
+import Egiftcard from "./Giftcards/Egiftcard";
 import Corporatesbody from "./Corporates/Corporates";
 import Offers from "./Offers/Offers";
 import Plays from "./Plays/Plays";
 import Movies from "./Movies/Movies";
 import { movietheaters } from "./Utils/BuyTicketsData";
 import BuyTickets from "./components/BuyTickets";
-// import BuyTickets from "./Components/BuyTickets/BuyTickets";
-
-// import Slider from "./Slider/Slider";
 
 function App() {
   return (
@@ -27,30 +26,30 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/stream" element={<Stream></Stream>}></Route>
-          <Route path="/movies" element={<Movies></Movies>}></Route>
-          <Route path="/events" element={<Events></Events>}></Route>
-          <Route path="/sports" element={<Sports></Sports>}></Route>
-          <Route path="/activities" element={<Activities></Activities>}></Route>
-          <Route path="/buzz" element={<Buzz></Buzz>}></Route>
-          <Route path="/plays" element={<Plays></Plays>}></Route>
-          <Route path="/worldcup" element={<Worldcup></Worldcup>}></Route>
-          <Route path="/offers" element={<Offers></Offers>}></Route>
-          <Route
-            path="/listyourshow"
-            element={<ListYourShow></ListYourShow>}
-          ></Route>
-          <Route path="/gifts" element={<Giftcards></Giftcards>}></Route>
+          <Route path="/" element={<Home></Home>} />
+          <Route path="/stream" element={<Stream></Stream>} />
+          <Route path="/movies" element={<Movies></Movies>} />
+          <Route path="/events" element={<Events></Events>} />
+          <Route path="/sports" element={<Sports></Sports>} />
+          <Route path="/activities" element={<Activities></Activities>} />
+          <Route path="/buzz" element={<Buzz></Buzz>} />
+          <Route path="/plays" element={<Plays></Plays>} />
+          <Route path="/worldcup" element={<Worldcup></Worldcup>} />
+          <Route path="/offers" element={<Offers></Offers>} />
+          <Route path="/listyourshow" element={<ListYourShow></ListYourShow>} />
+          <Route path="/gifts" element={<Giftcards></Giftcards>}>
+            <Route path="/gifts" element={<Allgifts />} />
+            <Route path="/gifts/physical" element={<Egiftcard />} />
+          </Route>
           <Route
             path="corporates"
             element={<Corporatesbody></Corporatesbody>}
-          ></Route>
+          />
           <Route
             path="/jailerTickets"
             element={
               <BuyTickets
-                movieName="Jailer"
+                movieName="Saba Nayagan"
                 movieTicketsArray={movietheaters.JailerTelugu_2D_Theaters}
               ></BuyTickets>
             }
@@ -59,7 +58,7 @@ function App() {
             path="/jawanTickets"
             element={
               <BuyTickets
-                movieName="Jawan"
+                movieName="Salaar: Cease Fire - Part 1"
                 movieTicketsArray={movietheaters.JawanHindi_2D_Theaters}
               ></BuyTickets>
             }
@@ -68,7 +67,7 @@ function App() {
             path="/jailerTickets"
             element={
               <BuyTickets
-                movieName="Jailer"
+                movieName="Saba Nayagan"
                 movieTicketsArray={movietheaters.JailerTelugu_2D_Theaters}
               ></BuyTickets>
             }
@@ -77,7 +76,7 @@ function App() {
             path="/jawanTickets"
             element={
               <BuyTickets
-                movieName="Jawan"
+                movieName="Salaar: Cease Fire - Part 1"
                 movieTicketsArray={movietheaters.JawanHindi_2D_Theaters}
               ></BuyTickets>
             }

@@ -16,17 +16,20 @@
 }
 #imagecontainer2 {
   width: 90%;
+  margin: auto;
   height: 95%;
 }
 #imagevaluecontainer {
-  width: 100%;
+  width: 95%;
   height: 95%;
+  margin: auto;
   display: flex;
-  gap: 15px;
-  overflow: hidden;
+  row-gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 #imga2 {
-  height: 100%;
-  width: 250px;
+  height: 80%;
+  width: 220px;
   border-radius: 3px;
 }

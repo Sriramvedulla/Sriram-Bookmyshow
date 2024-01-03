@@ -37,8 +37,8 @@ function BuyTickets({ movieTicketsArray, movieName }) {
 
           {/* <JawanTickets
             JawanHindi_2D_Theaters={movietheaters.JawanHindi_2D_Theaters}
-          ></JawanTickets> */}
-          {/* <JailerTickets
+          ></JawanTickets>
+          <JailerTickets
             JailerTelugu_2D_Theaters={movietheaters.JailerTelugu_2D_Theaters}
           ></JailerTickets> */}
           {movieTicketsArray.map((movie, i) => {

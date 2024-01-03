@@ -1,8 +1,6 @@
 .offers {
-  margin-top: 3%;
+  padding-top: 25px;
   margin-bottom: 20px;
-
-  /* justify-content: space-between; */
 }
 .offerlink {
   width: 90%;
@@ -10,14 +8,16 @@
   gap: 30px;
   margin: auto;
 }
+.maincards {
+  background-color: #f2f2f2;
+}
 .card {
   width: 20%;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 5px rgb(223, 219, 219);
-  /* border: 3px solid gray; */
+  border-radius: 9px;
 }
 .offerlink img {
-  border-radius: 8px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .card p {
   padding: 5px;
@@ -25,4 +25,37 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
+}
+.offerfilter {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 30px;
+  justify-content: center;
+}
+.filtericon {
+  width: fit-content;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+}
+.ricons {
+  font-size: 35px;
+  color: #787474;
+  margin: 10px;
+}
+
+.payicons p {
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+.payicons:hover {
+  color: #eb4e62;
+}
+#thumbnail {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: -25px;
+  left: 10%;
+  margin-bottom: -20px;
 }

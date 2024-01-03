@@ -31,7 +31,7 @@ function Navbar() {
             <img
               id="worldcup"
               src="https://assets-in.bmscdn.com/static/2023/08/cwc23.png"
-              alt=""
+              alt="worldcupimg"
             />
             <div className="new">NEW</div>
           </Link>

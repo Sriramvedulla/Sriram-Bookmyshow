@@ -18,15 +18,15 @@
 }
 .giftbanner img {
   width: 100%;
+  margin-top: 30px;
   height: 250px;
   border-radius: 5px;
 }
-#giftbtn {
+.giftbutton {
   width: 15%;
   padding: 20px 0px;
   text-transform: uppercase;
   cursor: pointer;
-  border: 1px solid #cccccc;
 }
 span {
   margin-left: 35%;
@@ -67,8 +67,7 @@ span {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: #666866;
-  width: 90%;
-  margin: auto;
 }

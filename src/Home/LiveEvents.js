@@ -32,9 +32,9 @@ function LiveEvents() {
           <p className="see">See All</p>
         </div>
         <div className="Rmovies">
-          {TheBestOfLiveEvents.map((item) => {
+          {TheBestOfLiveEvents.map((item, i) => {
             return (
-              <div className="rmoviesimg">
+              <div className="rmoviesimg2" key={i}>
                 <img src={item.TheBestOfLiveevEventsImg} alt="rmovies" />
               </div>
             );

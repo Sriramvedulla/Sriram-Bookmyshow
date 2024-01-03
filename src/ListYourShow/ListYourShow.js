@@ -87,15 +87,15 @@ export default function ListYourShow() {
         </p>
 
         <div className="allcards">
-          {YourShowHead.Showlist.map((x) => {
+          {YourShowHead.Showlist.map((x, l) => {
             return (
-              <a className="showcards" href="#">
+              <div className="showcards" key={l}>
                 <div>
-                  <img src={x.icon} alt="" />
+                  <img src={x.icon} alt="listimg" />
                   <h3>{x.title}</h3>
-                  <img id="thumb" src={x.thumbnail} alt="" />
+                  <img id="thumb" src={x.thumbnail} alt="thumbimgs" />
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
@@ -109,15 +109,15 @@ export default function ListYourShow() {
         </p>
 
         <div className="allcards">
-          {YourShowHead.Showlist2.map((x) => {
+          {YourShowHead.Showlist2.map((x, l) => {
             return (
-              <a className="showcards2" href="#">
+              <div className="showcards2" key={l}>
                 <div>
-                  <img src={x.icon} alt="" />
+                  <img src={x.icon} alt="listimg" />
                   <h3>{x.title}</h3>
-                  <img id="thumb" src={x.thumbnail} alt="" />
+                  <img id="thumb" src={x.thumbnail} alt="thumbimgs" />
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>

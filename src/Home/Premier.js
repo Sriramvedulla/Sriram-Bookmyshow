@@ -4,37 +4,37 @@ import "./Home.css";
 const Premier = [
   {
     PremiersImg:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00365921-qzzpdqegwp-portrait.jpg",
-    PremierH3: "Return to Seoul",
-    PremierH4: "French",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00059052-jdujactdne-portrait.jpg",
+    PremierH3: "Ondu Motteya Kathe",
+    PremierH4: "Kannada",
   },
 
   {
     PremiersImg:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00365828-pthvdgzjgl-portrait.jpg",
-    PremierH3: "Follow Me",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00038182-xznjtfveak-portrait.jpg",
+    PremierH3: "U Turn",
+    PremierH4: "Kannada",
+  },
+
+  {
+    PremiersImg:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_exclusive_v1.png,t-false,lfo-bottom_left,l-end/et00380947-bazgeyaatl-portrait.jpg",
+    PremierH3: "Patra Mitro",
+    PremierH4: "Gujarati",
+  },
+
+  {
+    PremiersImg:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00381434-vngzaskayp-portrait.jpg",
+    PremierH3: "Tasher Ghawr",
+    PremierH4: "Bengali",
+  },
+
+  {
+    PremiersImg:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00363189-atvgnmuwwl-portrait.jpg",
+    PremierH3: "Trolls Band Together",
     PremierH4: "English",
-  },
-
-  {
-    PremiersImg:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00365169-uwpcjaxjmd-portrait.jpg",
-    PremierH3: "The Only Way Out",
-    PremierH4: "English",
-  },
-
-  {
-    PremiersImg:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00366830-mmrpktqpfa-portrait.jpg",
-    PremierH3: "Somewhere",
-    PremierH4: "English",
-  },
-
-  {
-    PremiersImg:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00366377-zbugdhlpnr-portrait.jpg",
-    PremierH3: "Welcome To Demon",
-    PremierH4: "Japanese",
   },
 ];
 function Premiers() {
@@ -53,9 +53,9 @@ function Premiers() {
           <p>Brand new releases every Friday</p>
         </div>
         <div className="Rmovies">
-          {Premier.map((item) => {
+          {Premier.map((item, i) => {
             return (
-              <div className="rmoviesimg1">
+              <div className="rmoviesimg1" key={i}>
                 <img src={item.PremiersImg} alt="rmovies" />
                 <h3>{item.PremierH3}</h3>
                 <p>{item.PremierH4}</p>

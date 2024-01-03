@@ -3,33 +3,33 @@ import React from "react";
 const Recomendedmovies = [
   {
     RmImgLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICAzMDcuN0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00331686-nwatwgbhjc-portrait.jpg",
-    RmName: "Jailor",
-    RmType: "Action/Drama/Thriller",
-  },
-  {
-    RmImgLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC40LzEwICAyMDUuM0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338629-adeyjbxpah-portrait.jpg",
-    RmName: "Gadar 2:The Katha..",
-    RmType: "Action/Drama/Period",
-  },
-  {
-    RmImgLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MjFLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00361640-hadftxleau-portrait.jpg",
-    RmName: "Gandheevadhari Arjuna",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA0OTQuOEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00301886-adtpyusrqu-portrait.jpg",
+    RmName: "Salaar: Cease Fire - Part 1",
     RmType: "Action/Thriller",
   },
   {
     RmImgLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTA1LjhLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00351659-thncgdskxu-portrait.jpg",
-    RmName: "Kings of Kotha",
-    RmType: "Action/Crime/Drama",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4yLzEwICAyLjdLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00380404-xltbhnjqyc-portrait.jpg",
+    RmName: "Saba Nayagan",
+    RmType: "Comedy/Romantic",
   },
   {
     RmImgLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTI1LjhLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00340111-tumdlxmhgw-portrait.jpg",
-    RmName: "Dream Girl2",
-    RmType: "Comedy/Drama/Romantic",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA5LjdLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00378033-cgjbwrsmgr-portrait.jpg",
+    RmName: "Conjuring Kannappan",
+    RmType: "Comedy/Horror",
+  },
+  {
+    RmImgLink:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny43LzEwICAyMC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00321161-crtrbkrqdj-portrait.jpg",
+    RmName: "Aquaman and the Lost Kingdom",
+    RmType: "Action/Adventure/Fantasy/Superhero",
+  },
+  {
+    RmImgLink:
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny40LzEwICAyMjNLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00326964-gfhauqthan-portrait.jpg",
+    RmName: "Dunki",
+    RmType: "Comedy/Drama",
   },
 ];
 function RecomendedMovies() {
@@ -41,9 +41,9 @@ function RecomendedMovies() {
           <p className="see">See All</p>
         </div>
         <div className="Rmovies">
-          {Recomendedmovies.map((item) => {
+          {Recomendedmovies.map((item, i) => {
             return (
-              <div className="rmoviesimg">
+              <div className="rmoviesimg" key={i}>
                 <img src={item.RmImgLink} alt="rmovies" />
                 <h3>{item.RmName}</h3>
                 <p>{item.RmType}</p>

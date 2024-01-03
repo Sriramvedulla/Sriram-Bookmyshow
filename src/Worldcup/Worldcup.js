@@ -68,15 +68,21 @@ const worldCup = [
 function Worldcup() {
   return (
     <div>
-      <div className="iccbody">
+      <div className="iccbody" id="iccbody">
         <div>
           <div className="main-poster">
             <div className="poster1">
-              <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/cwc-icc-logo-web-collection-202308190313.png" />
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/cwc-icc-logo-web-collection-202308190313.png"
+                alt="cricketimgs"
+              />
             </div>
 
             <div className="poster2">
-              <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-240:q-80/cwc-view-all-matches-web-collection-202308190127.png" />
+              <img
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-240:q-80/cwc-view-all-matches-web-collection-202308190127.png"
+                alt="cricketimgs"
+              />
             </div>
 
             <div className="heading">
@@ -86,11 +92,11 @@ function Worldcup() {
         </div>
 
         <div className="mainimg-card">
-          {worldCup.map((x) => {
+          {worldCup.map((x, j) => {
             return (
-              <div>
+              <div key={j}>
                 <div className="imageCard">
-                  <img src={x.imageLink} />
+                  <img src={x.imageLink} alt="cricketimgs" />
                 </div>
               </div>
             );

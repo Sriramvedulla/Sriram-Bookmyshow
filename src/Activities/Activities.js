@@ -1,234 +1,86 @@
-import { act } from "react-dom/test-utils";
+// import { act } from "react-dom/test-utils";
 import "./Activities.css";
 import React from "react";
 
 const activities = [
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWc%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00365216-wcubsskybw-portrait.jpg",
-    title: "Indian Tea Festiwal at Jio World Drive",
-    discripition: "south sky, Jio World drive..",
-    category: "Food Festival",
-    price: "₹ 249 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00318079-puqwfzndpp-portrait.jpg",
-    title: "BEST-Operation of Heritage Tour",
-    discripition: "Dr. S.P.M. Chowk",
-    category: "Antiques, Heritage, Museums",
-    price: "₹ 95 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00310275-nrwpwjdwsz-portrait.jpg",
-    title: "imagica Water Park",
-    discripition: "imagica Water",
-    category: "Theme park",
-    price: "₹ 565 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00022344-vcazsxezuu-portrait.jpg",
-    title: "Mumbai Filmcity Tour",
-    discripition: "Bollywood Park",
-    category: "Theme park",
-    price: "₹ 999 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00127447-zlwbjfsxmt-portrait.jpg",
-    title: "BOUNCE Inc Mumbai",
-    discripition: "bounce Inc mumbai",
-    category: "Theme park",
-    price: "₹ 826 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00305112-vbwfylrahm-portrait.jpg",
-    title: "UribsPrima-Inside the BMc Headquarters",
-    discripition: "Muncipal Corporation",
-    category: "Antiques, Heritage, Museums",
-    price: "₹ 350 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00325467-ffxzjzwpce-portrait.jpg",
-    title: "Water Kingdom",
-    discripition: "Warer Kingdom:mumbai",
-    category: "Theme park",
-    price: "₹ 757 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00315217-lqeqtkvpkq-portrait.jpg",
-    title: "Hamleys Play Mumbai",
-    discripition: "hamleys play :jio world",
-    category: "Theme park",
-    price: "₹ 500 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367126-yymqmkdqqd-portrait.jpg",
-    title: "Oktoberfest at Jio World Drive",
-    discripition: "South sky jio world drive",
-    category: "Food Festival",
-    price: "₹ 499 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00361621-ajsccwtyxg-portrait.jpg",
-    title: "The Crown Jewel of Mumbai" - "Inside CSMT",
-    discripition: "McDonalds opp CSMT..",
-    category: "Antiques, Heritage, Museums",
-    price: "₹ 100 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyIFNlcCBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00121822-jeglhkwzeb-portrait.jpg",
-    title: "Mumbai Midnight Cycling- Treks & Trails",
-    discripition: "Meeting Points",
-    category: "Cycling tour",
-    price: "₹ 299 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348440-zxnhhlutdn-portrait.jpg",
-    title: "No Escape Room(pali Hill Bandra)",
-    discripition: "Dorangos Hall 1: Bandra",
-    category: "Escape games",
-    price: "₹ 499 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00076445-azbcpvphgh-portrait.jpg",
-    title: "Snow kingDom Mumbai",
-    discripition: "Snow kingdom mumbai",
-    category: "Snow park",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAzIEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00307957-gyusymzubk-portrait.jpg",
+    title: "Snow Kingdom Chennai",
+    discripition: "VGP Universal Kingdom: Chennai",
+    category: "Snow Parks",
     price: "₹ 650 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00364985-xcqddsebtg-portrait.jpg",
-    title: "Rass Rang Thane",
-    discripition: "Modella Mill Compound",
-    category: "Navrathri",
-    price: "₹ 300 onwards",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAzIEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00362045-bhbjujpyhu-portrait.jpg",
+    title: "Hamleys Play - Chennai",
+    discripition: "Hamleys Phoenix Marketcity: Chennai",
+    category: "Theme Parks",
+    price: "₹ 500 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00359244-wssrzqqgpk-portrait.jpg",
-    title: "Mumbai Darshan By Bus",
-    discripition: "Meeting point gateway of mumbai",
-    category: "Tour",
-    price: "₹ 350 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00074418-elyskxdtdv-portrait.jpg",
-    title: "Pawna lake Camping",
-    discripition: "Pawna lake camping",
-    category: "Camping",
-    price: "₹ 600 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAxNSBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00366710-xxurfqlbjm-portrait.jpg",
-    title: "Con Biro 2023 - Competition",
-    discripition: "Litile Theatre: NCPA",
-    category: "Music compitions",
-    price: "₹ 200 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00357553-khajknymzd-portrait.jpg",
-    title: "EsselWorld Bird Park",
-    discripition: "Birds Park",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA0IEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00310275-qfjwjwnlre-portrait.jpg",
+    title: "imagica Water Park",
+    discripition: "Imagica Water Park (Khopoli): Mumbai",
     category: "Theme park",
-    price: "₹ 518 onwards",
+    price: "₹ 754 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00302244-qeqgfaqbmg-portrait.jpg",
-    title: "Dine in Blu",
-    discripition: "Radisson blu mumbai",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA3IEphbg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00380526-dsctjhwpaa-portrait.jpg",
+    title: "The Storyteller's Lunch",
+    discripition: "The Westin Chennai Velachery",
     category: "Fine Dining",
-    price: "₹ 1200 onwards",
+    price: "₹ 1250 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367629-sbqcfqccnm-portrait.jpg",
-    title: "Rasslella Navrathri 2023",
-    discripition: "The Bombay Presidency",
-    category: "Navrathri",
-    price: "₹ 499 onwards",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA0IEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00375390-qugkbnwybz-portrait.jpg",
+    title: "Day Out @ MGM",
+    discripition: "MGM Beach Resorts: Chennai",
+    category: "Resorts",
+    price: "₹ 2803 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00356262-qcltaflaee-portrait.jpg",
-    title: "Phoniex Entertainment Packages",
-    discripition: "Phoniex maretCity:mumbai",
-    category: "Bowling",
-    price: "₹ 301 onwards",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VGh1LCA0IEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00014607-engdszsccv-portrait.jpg",
+    title: "Imagicaa Theme Park",
+    discripition: "Imagica Theme Park (Khopoli): Mumbai",
+    category: "Theme Parks",
+    price: "₹ 707 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00019735-mfsfkwwlgs-portrait.jpg",
-    title: "KidZaina Mumbai",
-    discripition: "Kidzaina Mumbai",
-    category: "Adventure park",
-    price: "₹ 413 onwards",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA3IEphbiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00063784-vzpyyxhsjp-portrait.jpg",
+    title: "Wonderla Amusement Park Kochi",
+    discripition: "Wonderla: Kochi",
+    category: "Theme Parks",
+    price: "₹ 1012 onwards",
   },
   {
     imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00359157-aqhpclpxlm-portrait.jpg",
-    title: "Mumbai Heritage walk",
-    discripition: "meeting point",
-    category: "Antiques,Heritage,Museums",
-    price: "₹ 1000 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyIFNlcCBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00365386-axquyajqdb-portrait.jpg",
-    title: "Kolad Rever Rafting",
-    discripition: "IDFC first bank: Chembur",
-    category: "rafting",
-    price: "₹ 2950 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyIFNlcCBvbndhcmRz,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00331521-pnvdjrqzlv-portrait.jpg",
-    title: "Sondai Fort trek ",
-    discripition: "Meeting Point",
-    category: "Trekking",
-    price: "₹ 599 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAxOSBTZXAgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367608-lkkraeffcx-portrait.jpg",
-    title: "Mumbai Ganesh Pandal Hopping Tour",
-    discripition: "Genral post office:Fort",
-    category: "Festivals",
-    price: "₹ 1000 onwards",
-  },
-  {
-    imageLink:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBBdWcgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00359153-xvvpdaufwf-portrait.jpg",
-    title: "Mumbai Dharvi Slum Walk",
-    discripition: "Third Wave Coffie:Mahim",
+      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIEZlYiBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00378740-bnstjrvncp-portrait.jpg",
+    title: "Greenpeace Ship - Open Boat ",
+    discripition: "Chennai Port Trust: Chennai",
     category: "Unique Tours",
-    price: "₹ 800 onwards",
+    price: "Free",
   },
 ];
 
 export default function Activities() {
   return (
     <div className="maindivs">
-      {activities.map((x) => {
+      {activities.map((x, y) => {
         return (
-          <div>
-            <img className="Activitiesimages" src={x.imageLink} alt="" />
-            <h2 className="ActivitesPara">{x.title}</h2>
+          <div key={y}>
+            <img
+              className="Activitiesimages"
+              src={x.imageLink}
+              alt="actimages"
+            />
+            <h2 className="Activiteshead">{x.title}</h2>
             <p className="ActivitesPara">{x.discripition}</p>
             <p className="ActivitesPara">{x.category}</p>
             <p className="ActivitesPara">{x.price}</p>

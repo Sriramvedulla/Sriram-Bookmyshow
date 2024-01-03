@@ -2,13 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Navbar from "./navbar";
+import TemporaryDrawer from "./Drawer";
+import SimpleBackdrop from "./Backdrop";
+import BasicModal from "./PopMenu";
+
 function Header() {
   return (
     <div>
       <header>
         <div className="logoimg">
           <Link to="/">
-            <img src="./images/book.png" alt="" />
+            <img src="./images/book.png" alt="bookimage" />
           </Link>
           <input
             type="search"
@@ -17,14 +21,12 @@ function Header() {
           />
         </div>
         <div className="logging">
-          <a href="" className="hyd">
-            Hyderabad <i class="fa fa-caret-down"></i>
-          </a>
-          <button className="signin">Sign in</button>
+          <div className="dropmodal">
+            <SimpleBackdrop></SimpleBackdrop>
+            <BasicModal></BasicModal>
+          </div>
           <div className="menudash">
-            <div className="dash"></div>
-            <div className="dash"></div>
-            <div className="dash"></div>
+            <TemporaryDrawer></TemporaryDrawer>
           </div>
         </div>
       </header>

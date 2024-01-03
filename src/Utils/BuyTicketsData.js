@@ -27,8 +27,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 10:05
         {
@@ -46,8 +46,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 01:00
         {
@@ -65,8 +65,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 01:15
         {
@@ -84,8 +84,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 04:10
         {
@@ -107,8 +107,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 07:20
         {
@@ -130,8 +130,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 10:20
         {
@@ -149,8 +149,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
         // 10:30
         {
@@ -172,8 +172,8 @@ export const movietheaters = {
           ],
           language: "Hindi",
           movieType: "2D",
-          language: "Hindi",
-          movieType: "2D",
+          // language: "Hindi",
+          // movieType: "2D",
         },
       ],
       cancellation: false,

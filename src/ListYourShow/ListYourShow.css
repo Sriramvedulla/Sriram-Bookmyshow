@@ -26,8 +26,8 @@
   font-size: 20px;
   color: #333333;
 }
-#thumb {
-  width: 10%;
+img#thumb {
+  width: 15%;
   margin-left: 45%;
 }
 .host {

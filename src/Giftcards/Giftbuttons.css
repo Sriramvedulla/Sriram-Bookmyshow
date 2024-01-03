@@ -1,0 +1,46 @@
+#giftbtn {
+  width: 200px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.physicalcards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.egiftcard {
+  width: 10%;
+}
+.egiftcard img {
+  width: 100%;
+}
+.physicalcards2 {
+  width: 90%;
+  padding-top: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+.topsector {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+strong {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.topsector .para {
+  padding: 5px 0px;
+  font-size: 12px;
+}
+.topsector .para1 {
+  padding: 5px 0px;
+  font-size: 16px;
+}
