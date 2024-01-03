@@ -15,6 +15,7 @@ function Home() {
       <div>
         <img
           src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/icc-cwc-banner-collection-202308220156.png"
+          alt="homeimg"
           style={{
             width: "90%",
             marginLeft: "5%",
